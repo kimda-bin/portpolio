@@ -1,8 +1,7 @@
 <template>
   <div>
     <v-layout>
-      <v-text class="font">Portpolio</v-text>
-      <v-divider inset></v-divider>
+      <v-text class="font">dabin's Portpolio</v-text>
     </v-layout>
     <!--프로젝트1-->
     <div style="display: flex" class="size2">
@@ -36,6 +35,7 @@
         </v-layout>
       </div>
     </div>
+    <v-divider class="divider-size"></v-divider>
     <!--프로젝트2-->
     <div style="display: flex" class="size2">
       <v-layout>
@@ -68,6 +68,7 @@
         </v-layout>
       </div>
     </div>
+    <v-divider class="divider-size"></v-divider>
     <!--프로젝트3-->
     <div style="display: flex" class="size2">
       <v-layout>
@@ -144,8 +145,9 @@ export default {
   font-family: "Lobster", cursive;
   font-size: 200px;
   align-content: center;
-  margin-left: 35%;
-  margin-bottom: 10%;
+  margin-left: 23%;
+  margin-bottom: 20%;
+  margin-top: 20%;
 }
 .image {
   width: 70%;
@@ -162,6 +164,11 @@ export default {
 }
 .size2 {
   margin-left: 35%;
+}
+.divider-size {
+  margin-bottom: 50px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 </style>
 
