@@ -90,7 +90,7 @@
 
     <v-layout>
       <v-flex text-center>
-        <img src="/portpolio/image/image-petfood/image2.png" />
+        <img src="image/image-petfood/image2.png" />
       </v-flex>
     </v-layout>
     <v-layout>
