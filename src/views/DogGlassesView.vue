@@ -34,7 +34,7 @@
       </v-flex>
     </v-layout>
     <v-layout align-center justify-center class="image6">
-      <img src="portpolio/image/image-dogglasses/image6.png" />
+      <img src="/portpolio/image/image-dogglasses/image6.png" />
     </v-layout>
     <v-layout align-center justify-center>
       <v-flex class="pa-10" text-center>
@@ -99,7 +99,7 @@
             <img src="/portpolio/image/image-dogglasses/image2.png" />
           </v-flex>
           <v-flex>
-            <img src="portpolio/image/image-dogglasses/image5.png" />
+            <img src="/portpolio/image/image-dogglasses/image5.png" />
           </v-flex>
         </v-col>
       </v-flex>
