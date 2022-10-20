@@ -112,7 +112,7 @@
       </v-flex>
     </v-layout>
     <v-layout align-center justify-center class="image1">
-      <img src="/image/image-safetycheck/image3.png" />
+      <img src="portpolio/image/image-safetycheck/image3.png" />
     </v-layout>
     <v-layout>
       <v-flex text-center>
@@ -138,7 +138,7 @@
       </v-flex>
     </v-layout>
     <v-layout align-center justify-center class="image1">
-      <img src="/image/image-safetycheck/image4.png" />
+      <img src="portpolio/image/image-safetycheck/image4.png" />
     </v-layout>
     <v-layout>
       <v-flex text-center>
