@@ -6,170 +6,188 @@
     <v-layout align-center justify-center>
       <img src="/portpolio/image/line.png" class="image-line" />
     </v-layout>
-
+    <v-layout class="comment-margin">
+      <v-flex text-center>
+        <br />
+        <br />
+        <v-text class="comment">
+          2020, 2021, 2022년도 별 프로젝트 하나씩을 골라 포트폴리오를
+          작성했습니다.
+          <br />
+          포트폴리오 프로젝트는 총 세개로 "Dog Glasses", "SafetyCheck",
+          "PetFoodCheckingProgram" 입니다.
+          <br />
+          프로젝트 별 상세 페이지는 헤더를 통해 보실 수 있습니다.
+          <br />
+          프로젝트 별 상세 페이지에서 홈으로 돌아올 때에도 헤더를 이용합니다.
+          <br />
+          <br />
+          지금은 메인 페이지로 프로젝트 별로 간단히 이미지를 넣었습니다.
+          <br />
+          아직은 많이 부족하나 앞으로 더 공부를 하여 포트폴리오를 많이 채워나갈
+          것입니다.
+          <br />
+          제 포트폴리오를 봐주셔서 감사합니다!
+        </v-text>
+      </v-flex>
+    </v-layout>
+    <v-divider class="divider-size"></v-divider>
     <!--DogGlasses-->
     <v-layout align-center justify-center>
       <v-text class="font-explanation">"Dog Glasses"</v-text>
     </v-layout>
-    <div style="display: flex" class="size2">
-      <v-layout>
-        <v-col>
-          <v-flex xs8 sm4 data-aos="fade-right">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img
-                src="/portpolio/image/image-dogglasses/image1.jpg"
-                class="image"
-              />
-            </v-responsive>
-          </v-flex>
 
-          <v-flex xs5 sm4 data-aos="fade-top">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img
-                src="/portpolio/image/image-dogglasses/image2.png"
-                class="image"
-              />
-            </v-responsive>
-          </v-flex>
-        </v-col>
-      </v-layout>
-
-      <div class="size">
-        <v-layout>
-          <v-col>
-            <v-flex xs8 sm4 data-aos="fade-down">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img
-                  src="/portpolio/image/image-dogglasses/image5.png"
-                  class="image"
-                />
-              </v-responsive>
-            </v-flex>
-            <v-flex xs8 sm4 data-aos="fade-up">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img
-                  src="/portpolio/image/image-dogglasses/logo.png"
-                  class="image"
-                />
-              </v-responsive>
-            </v-flex>
-          </v-col>
-        </v-layout>
-      </div>
-    </div>
-    <v-layout justify-center>
-      <v-btn
-        icon
-        @click="goDogGlasses"
-        align-center
-        justify-center
-        class="icon"
+    <swiper :options="swiperOption" class="swiper">
+      <swiper-slide
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-dogglasses/logo.png);
+        "
       >
-        <v-icon large>mdi-arrow-right</v-icon>
-      </v-btn>
-    </v-layout>
+        <v-layout
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          fill-height
+          align-center
+          justify-center
+        >
+        </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-dogglasses/image1.jpg);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-dogglasses/image5.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-dogglasses/image2.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+    </swiper>
+
     <v-divider class="divider-size"></v-divider>
 
     <!--SafetyCheck-->
     <v-layout align-center justify-center>
-      <v-text class="font-explanation">"Safety Check"</v-text>
+      <v-text class="font-explanation">"SafetyCheck"</v-text>
     </v-layout>
-
-    <div style="display: flex" class="size2">
-      <v-layout>
-        <v-col>
-          <v-flex xs8 sm4 data-aos="fade-right">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img src="/portpolio/image/top1.jpg" class="image" />
-            </v-responsive>
-          </v-flex>
-
-          <v-flex xs5 sm4 data-aos="fade-top">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img src="/portpolio/image/top1.jpg" class="image" />
-            </v-responsive>
-          </v-flex>
-        </v-col>
-      </v-layout>
-      <div class="size">
-        <v-layout>
-          <v-col>
-            <v-flex xs8 sm4 data-aos="fade-down">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img src="/portpolio/image/top1.jpg" class="image" />
-              </v-responsive>
-            </v-flex>
-            <v-flex xs8 sm4 data-aos="fade-up">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img src="/portpolio/image/top1.jpg" class="image" />
-              </v-responsive>
-            </v-flex>
-          </v-col>
-        </v-layout>
-      </div>
-    </div>
-    <v-layout justify-center>
-      <v-btn
-        icon
-        @click="goSafetyCheck"
-        align-center
-        justify-center
-        class="icon"
+    <swiper :options="swiperOption" class="swiper">
+      <swiper-slide
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-safetycheck/image5.png);
+        "
       >
-        <v-icon large>mdi-arrow-right</v-icon>
-      </v-btn>
-    </v-layout>
+        <v-layout
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          fill-height
+          align-center
+          justify-center
+        >
+        </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-safetycheck/image6.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-safetycheck/image7.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-safetycheck/image8.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+    </swiper>
     <v-divider class="divider-size"></v-divider>
 
     <!--PetFoodCheckingProgram-->
     <v-layout align-center justify-center>
-      <v-text class="font-explanation">"PetFood Checking Program"</v-text>
+      <v-text class="font-explanation">"PetFoodCheckingProgram"</v-text>
     </v-layout>
-
-    <div style="display: flex" class="size2">
-      <v-layout>
-        <v-col>
-          <v-flex xs8 sm4 data-aos="fade-right">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img src="/portpolio/image/top1.jpg" class="image" />
-            </v-responsive>
-          </v-flex>
-
-          <v-flex xs5 sm4 data-aos="fade-top">
-            <v-responsive :aspect-ratio="1 / 1">
-              <img src="/portpolio/image/top1.jpg" class="image" />
-            </v-responsive>
-          </v-flex>
-        </v-col>
-      </v-layout>
-      <div class="size">
-        <v-layout>
-          <v-col>
-            <v-flex xs8 sm4 data-aos="fade-down">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img src="/portpolio/image/top1.jpg" class="image" />
-              </v-responsive>
-            </v-flex>
-            <v-flex xs8 sm4 data-aos="fade-up">
-              <v-responsive :aspect-ratio="1 / 1">
-                <img src="/portpolio/image/top1.jpg" class="image" />
-              </v-responsive>
-            </v-flex>
-          </v-col>
-        </v-layout>
-      </div>
-    </div>
-    <v-layout justify-center>
-      <v-btn
-        icon
-        @click="goPetFoodCheckingProgram"
-        align-center
-        justify-center
-        class="icon"
+    <swiper :options="swiperOption" class="swiper">
+      <swiper-slide
+        data-aos="fade-in"
+        data-aos-duration="1000"
+        class="slide"
+        style="background-image: url(/portpolio/image/image-petfood/image6.png)"
       >
-        <v-icon large>mdi-arrow-right</v-icon>
-      </v-btn>
-    </v-layout>
+        <v-layout
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          fill-height
+          align-center
+          justify-center
+        >
+        </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="background-image: url(/portpolio/image/image-petfood/image7.png)"
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="background-image: url(/portpolio/image/image-petfood/image8.png)"
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="background-image: url(/portpolio/image/image-petfood/image9.png)"
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-petfood/image10.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+      <swiper-slide
+        class="slide"
+        style="
+          background-image: url(/portpolio/image/image-petfood/image11.png);
+        "
+      >
+        <v-layout fill-height align-center justify-center> </v-layout>
+      </swiper-slide>
+    </swiper>
+    <v-divider class="divider-size"></v-divider>
   </div>
 </template>
 
@@ -185,7 +203,7 @@ export default {
       swiperOption: {
         loop: true,
         autoplay: {
-          delay: 3000,
+          delay: 1000,
         },
       },
     };
@@ -213,10 +231,12 @@ export default {
 
 <style scoped lang="less">
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
 .swiper {
-  height: 100vh;
+  height: 30vh;
+  width: 50vh;
   .slide {
-    background-size: cover;
     background-position: center center;
   }
 }
@@ -225,7 +245,18 @@ export default {
   font-size: 200px;
   align-content: center;
   margin-bottom: 20%;
-  margin-top: 20%;
+  margin-top: 10%;
+}
+.section {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 .image {
   width: 70%;
@@ -240,23 +271,20 @@ export default {
 .font-explanation {
   font-family: "Lobster", cursive;
   font-size: 60px;
-  aling-content: center;
   margin-bottom: 25px;
 }
-.icon {
-  margin-left: 7px;
-  margin-top: -20%;
+.comment {
+  font-size: 25px;
+  font-family: "Gowun Dodum", sans-serif;
 }
-.size {
-  margin-left: -55%;
-}
-.size2 {
-  margin-left: 35%;
+.comment-margin {
+  margin-top: -15%;
 }
 .divider-size {
   margin-bottom: 50px;
   margin-left: 30%;
   margin-right: 30%;
+  margin-top: 50px;
 }
 </style>
 
