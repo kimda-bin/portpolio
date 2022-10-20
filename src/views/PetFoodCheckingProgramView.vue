@@ -90,7 +90,7 @@
 
     <v-layout>
       <v-flex text-center>
-        <img src="/portpolio/image/image-petfood/image2.png" />
+        <img src="/portpolio/image/image-petfood/image2.PNG" />
       </v-flex>
     </v-layout>
     <v-layout>
@@ -119,7 +119,7 @@
 
     <v-layout>
       <v-flex text-center>
-        <img src="/portpolio/image/image-petfood/image3.png" />
+        <img src="/portpolio/image/image-petfood/image3.PNG" />
       </v-flex>
     </v-layout>
     <v-layout>
@@ -155,7 +155,7 @@
 
     <v-layout>
       <v-flex text-center>
-        <img src="/portpolio/image/image-petfood/image4.png" />
+        <img src="/portpolio/image/image-petfood/image4.PNG" />
       </v-flex>
     </v-layout>
     <v-layout>
@@ -188,7 +188,7 @@
     </v-layout>
     <v-layout>
       <v-flex text-center>
-        <img src="/portpolio/image/image-petfood/image5.png" />
+        <img src="/portpolio/image/image-petfood/image5.PNG" />
       </v-flex>
     </v-layout>
     <v-layout>
