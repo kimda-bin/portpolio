@@ -1,22 +1,46 @@
+
 <template>
   <div class="header">
     <v-layout align-center>
-      <div class="logo">김다빈의 포트폴리오</div>
+      <v-btn text class="logo" @click="gohome">dabin's portpolio</v-btn>
       <v-spacer></v-spacer>
-      <v-btn text>프로젝트1</v-btn>
-      <v-btn text>프로젝트2</v-btn>
-      <v-btn text>프로젝트3</v-btn>
+      <v-btn text class="logo" @click="goDogGlasses">DogGlasses</v-btn>
+      <v-btn text class="logo" @click="goSafetyCheck">SafetyCheck</v-btn>
+      <v-btn text class="logo" @click="goPetFoodCheckingProgram"
+        >PetFoodCheckingProgram</v-btn
+      >
     </v-layout>
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    gohome() {
+      this.$router.push("/");
+    },
+    goDogGlasses() {
+      this.$router.push("/DogGlasses");
+    },
+
+    goSafetyCheck() {
+      this.$router.push("/SafetyCheck");
+    },
+    goPetFoodCheckingProgram() {
+      this.$router.push("/PetFoodCheckingProgram");
+    },
+  },
+};
+</script>
+
 <style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap");
+
 .header {
   padding: 20px;
-  box-shadow: 0 6px 6px #eee;
 }
 .header .logo {
+  font-family: "Gowun Dodum", sans-serif;
   font-size: 20px;
-  font-weight: bold;
 }
 </style>

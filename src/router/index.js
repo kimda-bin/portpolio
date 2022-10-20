@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import homeview2 from '../views/homeview2.vue'
+import DogGlassesView from '../views/DogGlassesView.vue'
+import SafetyCheckView from '../views/SafetyCheckView.vue'
+import PetFoodCheckingProgramView from '../views/PetFoodCheckingProgramView.vue'
 
 Vue.use(VueRouter)
 
@@ -19,10 +21,21 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
+
   {
-    path: '/home2',
-    name: 'home2',
-    component: homeview2
+    path: '/DogGlasses',
+    name: 'DogGlasses',
+    component: DogGlassesView
+  },
+  {
+    path: '/SafetyCheck',
+    name: 'SafetyCheck',
+    component: SafetyCheckView
+  },
+  {
+    path: '/PetFoodCheckingProgram',
+    name: 'PetFoodCheckingProgram',
+    component: PetFoodCheckingProgramView
   }
 ]
 
